@@ -1,0 +1,13 @@
+.header{
+    text-align:center;
+    font-size:30px;
+  }
+  #album{
+    width:400px;
+    height:400px;
+    margin-left:100px;
+      
+  }
+  body{
+    text-align:center;
+  }

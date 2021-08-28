@@ -1,0 +1,16 @@
+body{
+    background:aquamarine
+}
+
+.left{
+    float: left;
+    margin-left: 50px;
+}
+.right{
+    float: right;
+    margin-right: 50px;
+}
+#heading{
+    text-align: center;
+    font-size: 23px;
+}

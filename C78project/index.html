@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>C78</title>
+    </head>
+    <body>
+        <p>
+            How to sort an alphabets
+            <h4 id="SAA"></h4>
+        </p>
+        <hr>
+        <p>
+            How to declare an array
+            <h4 id="DAA"></h4>
+        </p>
+        <hr>
+        <p>
+            How to fetch the first element of the array
+            <h4 id="first"></h4>
+        </p>
+        <hr>
+        <p>
+            How to fetch the seconed element of the array
+            <h4 id="second"></h4>
+        </p>
+        <hr>
+        <p>
+            How to loop the array
+            <h4 id="TLTA"></h4>
+        </p>
+        <hr>
+        <p>
+            How to add an element in the array
+            <h4 id="EITA"></h4>
+        </p>
+        <hr>
+        <p>
+            How to declare an array with alphabets
+            <h4 id="AWA"></h4>
+        </p>
+        <hr>
+       <p>
+            How to declare array with numbers
+            <h4 id="DAWN"></h4>
+        </p>
+        <hr>
+        <p>
+            how to get maximum number form array
+            <h4 id="MNFA">
+        </p>
+        
+    </body>
+    <script>
+        var fruits=["apple","banana","watermelon"]
+        console.log(fruits)
+        document.getElementById("DAA").innerHTML=fruits;
+
+        var frist_fruit=fruits[0]
+        console.log(frist_fruit)
+        document.getElementById("first").innerHTML=frist_fruit;
+
+        var second_fruit=fruits[1]
+        console.log(second_fruit)
+        document.getElementById("second").innerHTML=second_fruit;  
+
+        var array_value=""
+        for(i=0;i<fruits.length;i++){
+            console.log(fruits[i])
+            array_value=array_value+fruits[i]+"<br>"
+        }
+        document.getElementById("TLTA").innerHTML=array_value;
+
+        fruits.push("lemon")
+        console.log(fruits)
+        document.getElementById("EITA").innerHTML=fruits;
+
+        var alphabets=["e","a","d","c","b"]
+        console.log(alphabets)
+        document.getElementById("AWA").innerHTML=alphabets;
+
+         alphabets.sort()
+         document.getElementById("SAA").innerHTML=alphabets;
+         
+         var numbers = ["45", "4", "9", "16", "25"]; console.log(numbers);
+         document.getElementById("DAWN").innerHTML = numbers;
+
+         var maximum_number = Math.max.apply(Math, numbers);
+         console.log(maximum_number);
+         document.getElementById("MNFA").innerHTML = maximum_number;
+         
+
+    </script>
+</html>

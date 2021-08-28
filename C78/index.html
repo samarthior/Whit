@@ -1,0 +1,43 @@
+       
+  <html>
+  <head>
+    <title>save animals.</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <p class="header">BOOK OF FAMILY</p>
+    <img id="album" src="https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg">
+    <p id="name">BOOK OF FAMILY</p>
+    <div>
+      <button type="button" onclick="nextslide()">move </button>
+      
+    </div>
+  </body>
+  <script>
+      var images = [ 
+  "https://pbs.twimg.com/profile_images/923451113239703552/62jMMnTQ.jpg",
+ "https://i.pinimg.com/736x/f8/a9/dd/f8a9dd5024d6ebed33ae33db724d84e3.jpg",
+  "https://comps.canstockphoto.com/child-reading-book-kid-clip-art-vector_csp2633566.jpg",
+  
+];
+
+var names = ["Nagaraju Chikoti","Sushma Chikoti","Samarth Chikoti"];
+
+var j=0;
+function nextslide() 
+{
+  if (j == 3)
+  {
+    j=0;
+  }
+  
+  
+  
+  document.getElementById("name").innerHTML = names[j];
+  
+  document.getElementById("album").src = images[j];
+  j++;
+}
+
+  </script>
+</html>
